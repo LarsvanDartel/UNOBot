@@ -14,6 +14,6 @@ module.exports = class MessageEvent extends BaseEvent {
         if(message.author.bot) return;
         const { guild, channel } = message;
         const prefix = guildPrefixes.get(guild.id);
-        channel.send(`This guild's prefix is \`${prefix}\`.`);
+        //channel.send(`This guild's prefix is \`${prefix}\`.`);
     }
 }
