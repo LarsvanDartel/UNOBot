@@ -8,7 +8,7 @@ module.exports = class ReadyEvent extends BaseEvent {
         this.connection = StateManager.connection;
     }
 
-    async run(client, message){
+    async run(client){
         console.log(`Logged in as ${client.user.tag}!`);
         client.guilds.cache.forEach((guild) => {
             this.connection.query(

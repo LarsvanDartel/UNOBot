@@ -3,7 +3,10 @@ const fs = require('fs').promises;
 
 const BaseCommand = require('./structures/BaseCommand');
 const BaseEvent = require('./structures/BaseEvent');
-
+/**
+ * @param {Client} client - The bot's client
+ * @param {String} dir - The starting directory
+ */
 async function registerCommands(client, dir = '') {
   const filePath = path.join(__dirname, dir);
   const files = await fs.readdir(filePath);
@@ -20,7 +23,10 @@ async function registerCommands(client, dir = '') {
     }
   }
 }
-
+/**
+ * @param {Client} client - The bot's client
+ * @param {String} dir - The starting directory
+ */
 async function registerEvents(client, dir = '') {
   const filePath = path.join(__dirname, dir);
   const files = await fs.readdir(filePath);

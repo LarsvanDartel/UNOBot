@@ -2,6 +2,7 @@ require('dotenv').config();
 const { token } = require('../config');
 const { Client } = require('discord.js');
 const client = new Client();
+require('discord-buttons')(client);
 const StateManager = require('./utils/StateManager');
 const { registerCommands, registerEvents } = require('./utils/register');
 
