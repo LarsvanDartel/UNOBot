@@ -1,0 +1,27 @@
+{
+  "name": "unobot",
+  "version": "1.0.0",
+  "description": "A Discord Bot made with discord.js that integrates uno into the discord environment.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon ./src/bot.js",
+    "start": "node ./src/bot.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LarsvanDartel/UNOBot.git"
+  },
+  "author": "LarsvanDartel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LarsvanDartel/UNOBot/issues"
+  },
+  "homepage": "https://github.com/LarsvanDartel/UNOBot#readme",
+  "dependencies": {
+    "discord.js": "^12.5.3",
+    "discord.js-commando": "^0.12.3",
+    "dotenv": "^10.0.0",
+    "mysql2": "^2.2.5"
+  }
+}
